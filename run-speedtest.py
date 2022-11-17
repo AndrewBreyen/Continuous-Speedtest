@@ -35,7 +35,7 @@ while True:
 	# DOWN #
 	########
 	print("Running Test DOWN......")
-	down = st.download(threads=4)
+	down = st.download()
 	down_bps = round(down, 2)
 	down_mbps = down_bps/1000000
 	down_percent_of_expected = round((down_mbps/expected_down_mbps)*100,2)
@@ -50,7 +50,7 @@ while True:
 	# UP #
 	######
 	print("Running Test UP......")
-	up = st.upload(threads=4)
+	up = st.upload()
 	up_bps = round(up, 2)
 	up_mbps = up_bps/1000000
 	up_percent_of_expected = round((up_mbps/expected_up_mbps)*100,2)
